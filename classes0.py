@@ -39,14 +39,25 @@ class Passenger:
 
 
 def main():
-    f = Flight(origin="New York",destination="Paris",duration=540)
+    f1 = Flight(origin="New York",destination="Paris",duration=540)
     f2 = Flight("BS","Olav",540)
     #f.duration += 10
-    f.delay(10)
-    f.print_info()
+    f1.delay(10)
+    f1.print_info()
     f2.print_info()
 
     alice = Passenger(name="Alice")
+    bob = Passenger(name="Bob")
+    leo = Passenger(name="Leo")
+
+    f1.add_passenger(alice)
+    f1.add_passenger(bob)
+    f1.add_passenger(leo)
+
+    f1.print_info()
+    #sdfgit 
+
+
 
 
 if __name__== "__main__":
